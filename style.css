@@ -1,0 +1,289 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(218, 181, 181);
+}
+
+.overlay span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image-with-overlay {
+    position: relative;
+    /* Essential for positioning the overlay */
+    display: inline-block;
+    /* Makes the link wrap only the image */
+    overflow: hidden;
+    /* Hides parts of the overlay that might be outside */
+    /* You might want to add a fixed width/height or max-width here if needed */
+}
+
+/* Styles for the image inside the link */
+.image-with-overlay img {
+    display: block;
+    /* Removes extra space below images */
+    width: 100%;
+    /* Makes image fit its container */
+    height: auto;
+}
+
+
+/* Styles for the overlay itself */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /* Starts hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth fade effect */
+    text-align: center;
+    /* Centers text if it wraps */
+    padding: 10px;
+    /* Some padding for the text */
+    box-sizing: border-box;
+    /* Includes padding in width/height */
+}
+
+/* Shows the overlay when the link is hovered */
+.image-with-overlay:hover .overlay {
+    opacity: 1;
+    /* Makes the overlay visible */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    padding-bottom: 0%;
+    
+}
+
+.logo {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu {
+    text-decoration: none;
+    color: #f9fafb;
+    font-size: 20px;
+    padding: 10px 16px;
+    padding-right: 100px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 6px;
+    transition: 0.35;
+    display: flex;
+        gap: 50px;
+    align-items: center;
+        gap: 170px;
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+}
+
+.search input {
+    width: 180px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.search button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.photos {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+        gap: 15px;
+}
+
+.photos2 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+        gap: 15px;
+} 
+
+.photos3 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.photos4 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.photos5 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.photos6 {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.more-artists {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    padding-left: 20px;
+}
+
+.arrow {
+    font-size: 80px;
+    font-weight: normal;
+}
+
+.photos img,
+.photos2 img,
+.photos3 img,
+.photos4 img,
+.photos5 img,
+.photos6 img {
+    width: 100%;
+    
+    display: block;
+}
+
+.photos>a,
+.photos2>a,
+.photos3>a,
+.photos4>a,
+.photos5>a,
+.photos6>a {
+    width: 50%;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.bts {
+    padding-left: 40px;
+    padding-right: 600px;
+}
+
+.bts-table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+    text-align: center;
+}
+
+.bts-table th {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.bts-table td {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.bts-table td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+.twice {
+    padding-left: 40px;
+    padding-right: 600px;
+}
+
+.twice-table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 15px 10px;
+    text-align: center;
+}
+
+.twice-table th {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.twice-table td {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.twice-table td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+.twice-foot {
+    width: 110%;
+}
